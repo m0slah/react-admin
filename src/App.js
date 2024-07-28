@@ -5,7 +5,7 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import Topbar from "./scenes/global/Topbar";
 
 function App() {
-  const [theme, colorMode] = useState("");
+  const [theme, colorMode] = useMode();
 
   return (
     <ColorModeContext.Provider value={colorMode}>
